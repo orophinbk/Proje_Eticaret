@@ -1,0 +1,5 @@
+﻿@model IEnumerable<EntityLayer.Context.Category>
+@foreach (var item in Model)
+{
+    <a href="/Shop/ProductDetails/@item.CategoryID" class="nav-item nav-link">@item.Name</a>
+}

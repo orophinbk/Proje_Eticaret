@@ -1,0 +1,13 @@
+﻿@model IEnumerable<EntityLayer.Context.Category>
+
+<div class="border-bottom mb-4 pb-4">
+    <h5 class="font-weight-semi-bold mb-4">Kategoriler</h5>
+    <form>
+        @foreach (var item in Model)
+        {
+            <div class="align-items-center justify-content-between mb-3">
+                <a href="/Shop/ProductDetails/@item.CategoryID">@item.Name</a>
+            </div>
+        }
+    </form>
+</div>
